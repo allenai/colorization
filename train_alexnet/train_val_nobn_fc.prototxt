@@ -167,7 +167,7 @@ layer {
   type: "Convolution"
   bottom: "pool2"
   top: "conv3"
-  propagate_down: False
+  propagate_down: false
   param {    lr_mult: 1    decay_mult: 1  }
   param {    lr_mult: 2    decay_mult: 0  }
   convolution_param {

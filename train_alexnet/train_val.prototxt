@@ -436,5 +436,5 @@ layer {
   bottom: "gt_ab_ss"
   top: "loss"
   loss_weight: 1.
-  loss_param {    normalize: True  }
+  loss_param {    normalize: true  }
 }

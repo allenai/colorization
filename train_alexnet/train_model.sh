@@ -1,4 +1,6 @@
+#!/bin/bash
 
+source config.sh
 # bash train_alexnet/train_model.sh [[GPU_ID]]
 
 mkdir ./train_alexnet/models

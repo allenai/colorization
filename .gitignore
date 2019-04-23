@@ -1,0 +1,7 @@
+*.pyc
+data/
+imagenet
+feature_learning_tests/linear/models
+train_alexnet/models
+train_alexnet/mi.caffemodel
+train_alexnet/colornet_iter_*_nobn*.caffemodel

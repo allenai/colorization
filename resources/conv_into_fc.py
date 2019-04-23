@@ -34,10 +34,11 @@ if __name__ == '__main__':
 	net1 = caffe.Net(PROTOTXT1_PATH, MODEL_PATH, caffe.TEST)
 	net2 = caffe.Net(PROTOTXT2_PATH, DUMMYMODEL_PATH, caffe.TEST)
 
-	import rz_fcns as rz
-	rz.caffe_param_shapes(net1,to_print=True)
-	rz.caffe_param_shapes(net2,to_print=True)
-	rz.caffe_shapes(net2,to_print=True)
+        # commenting out since packages don't exist in the repo
+	# import rz_fcns as rz
+	# rz.caffe_param_shapes(net1,to_print=True)
+	# rz.caffe_param_shapes(net2,to_print=True)
+	# rz.caffe_shapes(net2,to_print=True)
 
 	# CONV_INDS = np.where(np.array([layer.type for layer in net1.layers])=='Convolution')[0]
 	print net1.params.keys()

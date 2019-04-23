@@ -100,7 +100,7 @@ To run the "real vs fake" Amazon Mechanical Turk test (Table 1 of the paper), se
 
 The provided scripts run representation learning tests. Note that the scripts run on release models. Modify scripts accordingly if you want to test your own trained model.
 
-(A) <b>ILSVRC Linear Classification</b> Run `./feature_learning_tests/linear/run_linear_tests.sh [GPU_ID]`. This will save results in `./feature_learning_tests/linear/test_acc_log`. Training takes roughly 0.25 sec/iter = 10 hrs/140k iters on a Titan X Pascal. Note that this test was slightly changed from the ECCV paper (instead of average pooling, we do bilinear resizing here). The updated test was used in our [Split-Brain Autoencoder paper](https://richzhang.github.io/splitbrainauto/). File `./feature_learning_tests/linear/test_acc_log/loss_log` shows results for layers `conv1, pool1, conv2, pool2, conv3, conv4, conv5, pool5`.
+(A) <b>ILSVRC Linear Classification</b> Run `./feature_learning_tests/run_linear_tests.sh [GPU_ID]`. This will save results in `./feature_learning_tests/linear/test_acc_log`. Training takes roughly 0.25 sec/iter = 10 hrs/140k iters on a Titan X Pascal. Note that this test was slightly changed from the ECCV paper (instead of average pooling, we do bilinear resizing here). The updated test was used in our [Split-Brain Autoencoder paper](https://richzhang.github.io/splitbrainauto/). File `./feature_learning_tests/linear/test_acc_log/loss_log` shows results for layers `conv1, pool1, conv2, pool2, conv3, conv4, conv5, pool5`.
 
 (B) <b> PASCAL Classification </b>
 (a) Clone [VOC-Classification Repo](https://github.com/jeffdonahue/voc-classification). Set up directories as instructed.

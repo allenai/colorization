@@ -1,3 +1,6 @@
+#!/bin/bash
+
+source config.sh
 
 # Input 1: GPU_ID
 # Input 2: Iteration number (450000 if training has concluded)
